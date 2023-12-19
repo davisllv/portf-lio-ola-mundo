@@ -10,9 +10,9 @@ const Banner = () => {
         <h1 className={styles.titulo}>Olá, Mundo!</h1>
 
         <p className={styles.paragrafo}>
-          Boas vindas ao meu espaço pessoal! Eu sou Antônio Evaldo, instrutor de
-          Front-end da Alura. Aqui compartilho vários conhecimentos, espero que
-          aprenda algo novo :)
+          Boas vindas ao meu espaço pessoal! Eu sou Davi da Silva dos Santos,
+          Programador Full Stack da Scoreplan. Aqui compartilho vários
+          conhecimentos, espero que aprenda algo novo :)
         </p>
       </div>
 

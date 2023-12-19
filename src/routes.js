@@ -2,6 +2,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Inicio from "./Paginas/Inicio";
 import SobreMim from "./Paginas/SobreMim";
 import Menu from "./componentes/Menu";
+import Rodape from "./componentes/Rodape";
 
 function AppRoutes() {
   return (
@@ -16,6 +17,8 @@ function AppRoutes() {
         {/* Rota coringa para poder direcionar para um lugar, quando o usuário digitar uma rota nada a ver */}
         <Route path="*" element={<h1>Te liga ai cabeção</h1>} />
       </Routes>
+
+      <Rodape />
     </BrowserRouter>
   );
 }
