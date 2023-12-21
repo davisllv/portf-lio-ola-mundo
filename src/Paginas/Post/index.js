@@ -1,9 +1,10 @@
-import { useParams } from "react-router-dom";
+import { Route, Routes, useParams } from "react-router-dom";
 import "./post.css"
 import Posts from "json/db.json";
 import PostModelo from "componentes/PostModelo";
 import ReactMarkdown from "react-markdown";
 import NaoEncontrada from "Paginas/NaoEncontrada";
+import PaginaPadrao from "componentes/PaginaPadrao";
 
 const Post = () => {
   const { id } = useParams();
@@ -18,14 +19,20 @@ const Post = () => {
     )
   }
   return (
-    <PostModelo
-      fotoCapa={`/assets/posts/${Post.id}/capa.png`}
-      titulo={post.titulo}
-    >
-      <div className="post-markdown-container">
-        <ReactMarkdown>{post.texto}</ReactMarkdown>
-      </div>
-    </PostModelo>
+    <Routes>
+      <Route path="*" element={<PaginaPadrao />}>
+        <Route index element={
+          <PostModelo
+          fotoCapa={`/assets/posts/${Post.id}/capa.png`}
+          titulo={post.titulo}
+        >
+          <div className="post-markdown-container">
+            <ReactMarkdown>{post.texto}</ReactMarkdown>
+          </div>
+        </PostModelo>
+        } />
+      </Route>
+    </Routes>
   );
 };
 

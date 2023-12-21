@@ -26,7 +26,7 @@ const NaoEncontrada = () => {
                 // O react router ele mantém uma pilha de navegação, posso ir selecionando para onde eu vou
                 navigate(-1)
             }}>
-            <BotaoPrincipal size={"lg"}>Voltar</BotaoPrincipal>
+                <BotaoPrincipal size={"lg"}>Voltar</BotaoPrincipal>
             </div>
                 <img 
                     className={styles.imagemCachorro}
