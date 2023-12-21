@@ -1,7 +1,8 @@
 .fotoSobreMim {
   margin-bottom: 0.5rem;
   margin-left: 1.5rem;
-  width: 40vw;
+  width: 30vw;
+  border-radius: 16px;
   float: right;
 }
 
