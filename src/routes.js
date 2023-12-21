@@ -5,6 +5,7 @@ import Menu from "./componentes/Menu";
 import Rodape from "./componentes/Rodape";
 import PaginaPadrao from "componentes/PaginaPadrao";
 import Post from "Paginas/Post";
+import NaoEncontrada from "Paginas/NaoEncontrada";
 
 function AppRoutes() {
   return (
@@ -21,7 +22,7 @@ function AppRoutes() {
         </Route>
 
         {/* Rota coringa para poder direcionar para um lugar, quando o usuário digitar uma rota nada a ver */}
-        <Route path="*" element={<h1>Te liga ai cabeção</h1>} />
+        <Route path="*" element={  <NaoEncontrada />} />
       </Routes>
 
       <Rodape />
