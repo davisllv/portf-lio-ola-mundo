@@ -1,14 +1,15 @@
 import styles from "./inicio.module.css";
 import posts from "json/db.json";
-import Post from "componentes/PostCard";
+import PostCard from "componentes/PostCard";
 const Inicio = () => {
   return (
     <main>
       <ul className={styles.posts}>
+        
         {posts.map((post) => {
           return (
             <li key={post.id}>
-              <Post post={post} />
+              <PostCard post={post} />
             </li>
           );
         })}
